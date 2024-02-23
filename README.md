@@ -10,22 +10,12 @@ Run `npm run dev` for a dev server. Navigate to `http://localhost:5173/`. The ap
 - CSS
 - TypeScript
 - React.js
-- Supabase
 - React Query
 - React Icons
 - React router
 - Styled components
-- Recharts
 - Vite
-
-## Credentials for Demo
-
-| Email Address   | Password |
-|-----------------| -------- |
-| admin@admin.com | admin@admin.com |
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
+- 
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
