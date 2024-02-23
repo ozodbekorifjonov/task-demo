@@ -203,7 +203,6 @@ const GlobalStyles = createGlobalStyle`
             padding: 1rem;
             font-size: 1rem;
 
-            height: 400px;
             overflow: scroll;
         }
     }
@@ -265,7 +264,6 @@ const GlobalStyles = createGlobalStyle`
                 padding: 1rem;
                 font-size: 1rem;
 
-                height: 400px;
                 overflow: scroll;
             }
         }
