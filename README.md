@@ -11,6 +11,7 @@ Run `npm run dev` for a dev server. Navigate to `http://localhost:5173/`. The ap
 - TypeScript
 - React.js
 - React Query
+- MSW
 - React Icons
 - React router
 - Styled components
