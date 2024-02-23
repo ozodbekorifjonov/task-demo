@@ -13,6 +13,6 @@ export const updateUserProfileAPI = async ({
   id: number;
   values: IUpdateUserProfile;
 }): Promise<IUser> => {
-  const response = await axios.put<IUser>(`/user/${id}`, { body: values });
+  const response = await axios.put<IUser>(`/user/${id}`, values);
   return response.data;
 };

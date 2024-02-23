@@ -6,16 +6,16 @@ import { updateUserProfileAPI } from '../../api/apiUser.ts';
 export const useUpdateProfile = () => {
   const queryClient = useQueryClient();
 
-  const { mutate: updateProfile, isLoading: isUpdating } = useMutation({
+  const { mutate: updateProfile, isPending: isUpdating } = useMutation({
     mutationFn: updateUserProfileAPI,
     onSuccess: async () => {
-      toast.success('Setting successfully edited');
-      await queryClient.invalidateQueries({ queryKey: [Api.user] });
+      toast.success('User data updated  successfully');
+      await queryClient.invalidateQueries({ queryKey: [Api.profile] });
     },
     onError: (err) => {
       toast.error(err instanceof Error ? err.message : 'An error occurred');
     },
   });
 
-  return { isUpdating, updateProfile };
+  return { updateProfile, isUpdating };
 };

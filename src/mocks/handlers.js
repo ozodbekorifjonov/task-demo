@@ -12,19 +12,18 @@ export const handlers = [
   http.get('/api/user', () => {
     return HttpResponse.json(userData);
   }),
-  http.put('/api/user/:id', (req, res, ctx) => {
-    console.log('hello req', req);
-    const { id } = req.params;
-    const values = req.body;
+  http.put('/api/user/:id', async ({ request, params }) => {
+    const { id } = params;
+    const updatedProfile = await request.json();
 
     if (parseInt(id) === userData.id) {
       userData = {
         ...userData,
-        ...values,
+        ...updatedProfile,
       };
-      return res(ctx.json(userData));
+      return HttpResponse.json(userData, { status: 200 });
     } else {
-      return res(ctx.json({ error: 'User not found' }));
+      return HttpResponse.json('User not found', { status: 404 });
     }
   }),
 ];

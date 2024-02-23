@@ -1,10 +1,10 @@
-import Heading from '../ui/Heading.tsx';
 import Row from '../ui/Row.tsx';
+import DashboardHome from '../features/home/DashboardHome.tsx';
 
 const Home = () => {
   return (
     <Row>
-      <Heading as="h3">Hello World :)</Heading>
+      <DashboardHome />
     </Row>
   );
 };

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { useProfile } from '../profile/useProfile.ts';
+import { useProfile } from './useProfile.ts';
 
 const StyledUserAvatar = styled.div`
   display: flex;

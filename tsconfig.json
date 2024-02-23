@@ -2,14 +2,9 @@
   "compilerOptions": {
     "target": "es5",
     "useDefineForClassFields": true,
-    "lib": [
-      "ES2020",
-      "es2021",
-      "DOM",
-      "DOM.Iterable",
-      "esnext"
-    ],
+    "lib": ["ES2020", "es2021", "DOM", "DOM.Iterable", "esnext"],
     "module": "ESNext",
+    "esModuleInterop": true,
     "skipLibCheck": true,
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -22,11 +17,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "types": ["node", "jest", "@testing-library/jest-dom"]
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src"],
   "references": [
     {
       "path": "./tsconfig.node.json"
